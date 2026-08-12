@@ -25,11 +25,31 @@
         <p class="autor">Por: Nayara</p>
         <h2>Minha primeira entrevista</h2>
         <p>Contando o meu sonho</p>
+        <button>🩵<span>0<span></buton>
+        <button>❤️<span>0<span></buton>
         </div>
     </main>
     <footer>
         <p>Por Nayara Ramos</p>
     </footer>
 </body>
+<script>
+const botoes = document.querySelecttorAll("button")
+botoes.array.forEach(function(botao) {
+    let curtiu = falso;
+    botao.addEventlistner("click", botaoclicado);
+    function botaoClicado(){
+        let exto = botao.querySelectorAll("span");
+        if (curtiu === false) {
+        texto.textContent++;
+        curtiu = true;
+        }
+     }else{
+        texto.textcontent--;
+        curtiu=false;
+    }
+}
+)
+</script>
 
 </html>
