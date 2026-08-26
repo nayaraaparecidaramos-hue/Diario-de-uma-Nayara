@@ -4,6 +4,8 @@ header {
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
+    border: 5px solid #39c4eb;
+    padding: 15px;
 }
 
 main {
@@ -14,6 +16,7 @@ main {
     margin: 0 auto;
     border: Spx solid #fff;
     padding: 15px;
+    display: flex;
 }
 
 footer {
@@ -26,4 +29,9 @@ footer {
 
 .autor{
     font-weight: bold;
+}
+
+img{
+height: 10%;
+width: 10%;
 }
