@@ -13,46 +13,53 @@
         <h1>Diário de uma Nayara</h1>
         <p>O que a Nayara está fazendo?</p>
     </header>
+
     <main>
-        <img src="Diário de uma MC.png" alt="Um diário aberto reúne uma música que conta o sonho de infância de se tornar
+        <img src="Diário de uma MC.png"
+            alt="Um diário aberto reúne uma música que conta o sonho de infância de se tornar
             MC, revelando a admiração pelos artistas, a vontade de subir aos palcos e a determinação para transformar
             esse objetivo em realidade. A página é decorada com corações, estrelas, notas musicais e uma ilustração de
             coroa em tons de rosa, acompanhada por uma caneta rosa. Ao lado, uma fotografia de MC Nayara mostra a
             artista usando um conjunto esportivo preto, com expressão confiante e postura marcante. Na parte inferior do
             diário, a frase Sonhos não cabem em gavetas. Se escrevem. Se vivem. Se realizam. reforça a mensagem de
             persistência, foco e realização dos próprios sonhos.">
-        
+
         <div>
-        <p class="autor">Por: Nayara</p>
-        <h2>Minha primeira entrevista</h2>
-        <p>Contando o meu sonho</p>
-        <button>🩵<span>0<span></buton>
-        <button>❤️<span>0<span></buton>
+            <p class="autor">Por: Nayara</p>
+            <h2>Minha primeira entrevista</h2>
+            <p>Contando o meu sonho</p>
+
+            <button>🩵<span>0</span></button>
+            <button>❤️<span>0</span></button>
         </div>
-    
+
     </main>
+
     <footer>
         <p>Por Nayara Ramos</p>
     </footer>
 </body>
 
 <script>
-const botoes = document.querySelectorAll("button")
+    const botoes = document.querySelectorAll("button");
 
-botoes.forEach(function(botao) {
-    let curtiu = false;
-    botao.addEventListener("click", botaoClicado);
-    function botaoClicado(){
-        let texto = botao.querySelector("span");
-        if (curtiu === false) {
-        texto.textContent++;
-        curtiu = true;
-        
-     } else {
-        texto.textContent--;
-        curtiu = false;
-    }
-})
+    botoes.forEach(function(botao) {
+        let curtiu = false;
+
+        botao.addEventListener("click", botaoClicado);
+
+        function botaoClicado() {
+            let texto = botao.querySelector("span");
+
+            if (curtiu === false) {
+                texto.textContent++;
+                curtiu = true;
+            } else {
+                texto.textContent--;
+                curtiu = false;
+            }
+        }
+    })
 </script>
 
 </html>
